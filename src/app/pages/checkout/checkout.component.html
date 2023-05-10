@@ -1,0 +1,22 @@
+<div class="container">
+    <form class="form" #checkoutForm="ngForm">
+        <mat-form-field class="element">
+            <mat-label>Ingrese su nombre</mat-label>
+            <input matInput placeholder="Nombre" required [(ngModel)]="model.name" name="name" #name="ngModel">
+            <mat-error *ngIf="!name.valid || name.pristine">
+                El nombre es requerido
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="element">
+            <mat-label>Selecione la moneda</mat-label>
+            <mat-select placeholder="Monedas" name="moneda">
+                <mat-option>
+                    <option (click)="setCurrency('USD',1)">Dolar</option>
+                    <option (click)="setCurrency('EUR',.89)">Euro</option>
+                    <option (click)="setCurrency('ARS',480)">Peso</option>
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <app-details></app-details>
+</div>

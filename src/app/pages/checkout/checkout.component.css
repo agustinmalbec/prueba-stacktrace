@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}
+.element{
+    margin: 30px;
+}

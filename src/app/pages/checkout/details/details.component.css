@@ -1,0 +1,24 @@
+.container{
+    width: 90%;
+    margin: 0 4%;
+}
+.table{
+    font-size: 1.5rem;
+}
+th{
+    background-color: #673AB7;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+}
+td{
+    padding: 10px;
+    background-color: lightgray;
+    width: 300px;
+}
+.totalContainer{
+    margin: 1rem;
+}
+.total{
+    font-size: 1.5rem;
+}
